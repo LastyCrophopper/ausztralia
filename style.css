@@ -16,19 +16,7 @@ main{
                         "ar ar as"
                         "f f f";
     }
-
-@media screen and (max-width: 700px) {
-    main{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas: "h"
-                            "n"
-                            "ar"
-                            "as"
-                            "f";
-    }
-}
-    
+ 
 header{
     grid-area: h;
     text-align: center;
@@ -72,13 +60,9 @@ article{
     border-color: black;
     border: 5px solid black
 }
-    @media screen and (max-width: 700px){
-    .kartyak{
-        grid-template-columns: 1fr;
-    }
-}
 
-.img{
+
+img{
     width: 100%;
     height: auto;
     display: block;
@@ -93,4 +77,19 @@ footer{
 
 nav{
     grid-area: n;
+}
+
+@media screen and (max-width: 700px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "h"
+                            "n"
+                            "ar"
+                            "as"
+                            "f";
+    }
+    .kartyak{
+        grid-template-columns: 1fr;
+    }
 }
